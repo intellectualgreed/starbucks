@@ -121,7 +121,7 @@ html {
       text-decoration: none;
       background-color: var(--corPrimaria);
       color: var(--corTerciaria);
-      border-radius: 20px;
+      border-radius: 10px;
     } 
     .circulo{
       position: absolute;
