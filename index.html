@@ -15,10 +15,12 @@
 </head>
 <body>
 
-    <!-- Container com toda a página -->
-    <main>
-        <!-- Div para o círculo colorido -->
+    <section>
+        
+        <!-- Container com toda a página -->
         <div class="circulo"></div>
+        <main>
+            <!-- Div para o círculo colorido -->
 
         <!-- Header -->
         <header>
@@ -37,6 +39,45 @@
             </ul>
 
         </header>
+            <div class="conteudo">
+                <div class="textoPrincipal">
+
+                    <h2>Não é apenas um café é:<br> <span>Starbucks</span></h2>
+                    <p>Descubra um mundo de sabores inesquecíveis com a Starbucks. Cada colherada é uma explosão de sabores irrestiveis que vão te conquistar!
+                    </p>
+
+                    <a href="https://www.starbucks.com.br" target="_blank">Veja mais</a>
+                </div>
+            </div>
+            <div class="imagBox">
+                <img style="width: 350px; height: 475px;" src="assets/img1.png" class="roupa">
+            </div>
+
+            <ul class="thumb">
+                <li><img src="assets/img1.png" onclick="imgSlider('assets/img1.png'); changeCircleColor('#86a96f')" alt="bebida 1"></li>
+                <li><img src="assets/img2.png" onclick="imgSlider('assets/img2.png'); changeCircleColor('#f6d6d6') " alt="bebida 2"></li>
+                <li><img src="assets/img3.png" onclick="imgSlider('assets/img3.png'); changeCircleColor('#F58AD3')" alt="bebida 3"></li>
+            </ul>
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/StarbucksBrasil/"><img src="assets/facebook.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/starbucksbrasil/"><img src="assets/instagram.png" alt=""></a></li>
+                <li><a href="https://twitter.com/StarbucksBrasil"><img src="assets/twitter.png" alt=""></a></li>
+            </ul>
+        </main>
+    </section>
+
+    <script type="text/javascript">
+
+        function imgSlider(anything){
+            document.querySelector('.roupa').src = anything;
+        }
+    
+        function changeCircleColor(color){
+            const circulo = document.querySelector('.circulo');
+            circulo.style.background = color;
+        }
+
+    </script>
 
     </main>
     
